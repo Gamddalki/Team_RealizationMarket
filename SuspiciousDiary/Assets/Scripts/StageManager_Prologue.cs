@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class StageManager_Prologue : MonoBehaviour
@@ -11,8 +12,7 @@ public class StageManager_Prologue : MonoBehaviour
         DiaryAppeared,
         DiaryPicked,
         TicketAppeared,
-        TicketPicked,
-        Complete
+        TicketPicked
     }
 
     public Stage currentStage = Stage.Start;
@@ -114,11 +114,8 @@ public class StageManager_Prologue : MonoBehaviour
                 }
                 else
                 {
-                    currentStage = Stage.Complete;
+                    SceneManager.LoadScene("Episode1_ECC");
                 }
-                break;
-
-            case Stage.Complete:
                 break;
             default:
                 break;

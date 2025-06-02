@@ -34,12 +34,15 @@ public class StageManager_Library : MonoBehaviour
     [Header("대사")]
     public DialogueData Auditorium01;
     public DialogueData Auditorium02;
+    public DialogueData Auditorium03;
 
     public DialogueManager dialogueManager;
 
     private bool clicked = false;
     private bool dialogueStarted = false;
     private Coroutine timerCoroutine;
+  
+
 
     void Start()
     {
@@ -90,18 +93,17 @@ public class StageManager_Library : MonoBehaviour
                 else if (!dialogueManager.IsDialogueComplete())
                 {
                     dialogueManager.ShowNextLine();
-                }
-                else
-                {
-                    currentStage = Stage.Complete;
-
                     dialogueStarted = false;
                     everytimeButton.SetActive(true);
                     yesbattery.SetActive(false);
+                    currentStage = Stage.Complete;
                 }
                 break;
-
             case Stage.Complete:
+                if(!dialogueStarted)
+                {
+                    dialogueManager.StartDialogue(Auditorium03.lines);
+                }
                 break;
         }
     }
@@ -143,9 +145,10 @@ public class StageManager_Library : MonoBehaviour
 
         sec.text = "0";
 
-        // 타이머 종료 후 처리 추가 (예: 실패 UI 띄우기)
+        MinigameResult.isSuccess = false;
         Debug.Log("⏰ 타이머 종료!");
     }
+
 
     public void OnClick_Diary()
     {

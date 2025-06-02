@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 1eeadcac81d4447d2bb45a76b272b1b5
+  - enabled: 1
+    path: Assets/Scenes/Prologue.unity
+    guid: a20ec94049f24402180115f77c06fe83
+  - enabled: 1
+    path: Assets/Scenes/Episode1_ECC.unity
+    guid: 1ef1cb744dc700a46941b351508938ed
+  - enabled: 1
+    path: Assets/Scenes/Episode2_library.unity
+    guid: 3a16705a62c024ad9b6271c86647d095
+  - enabled: 1
+    path: Assets/Scenes/Episode3_Auditorium.unity
+    guid: 9dc453667b341a84bbff0d3ad9cded50
+  - enabled: 1
+    path: Assets/Scenes/Episode4_AsanEngineering.unity
+    guid: b3ffbffa0c0bdba449d44cabb1a5f14a
+  - enabled: 1
+    path: Assets/Scenes/Diary_Ending.unity
+    guid: c305f6f5fa0f00149a811c1c1c0b37fb
+  - enabled: 1
     path: Assets/Vuforia_initial/SamplesResources/Scenes/0-Main.unity
     guid: a09cb257d566c489595b16ab37547666
   m_configObjects: {}

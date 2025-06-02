@@ -41,7 +41,6 @@ public class StageManager_Auditorium : MonoBehaviour
     }
 
     private bool clicked = false;
-    private bool isOnTime = true;
 
     public void OnClick_Next()
     {
@@ -50,7 +49,7 @@ public class StageManager_Auditorium : MonoBehaviour
         switch (currentStage)
         {
             case Stage.Start:
-                if (isOnTime)
+                if (MinigameResult.isSuccess)
                 {
                     chapelClearAlert.SetActive(true);
                     dialogueManager.StartDialogue(Auditorium01.lines);
