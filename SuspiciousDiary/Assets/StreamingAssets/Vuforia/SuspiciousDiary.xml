@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="auditorium" size="1.000000 0.721098" />
+    <ImageTarget name="libaray" size="1.000000 0.664773" />
     <ImageTarget name="RestaurantPoster" size="100.000000 133.350754" />
     <ImageTarget name="Asan123" size="100.000000 100.000000" />
     <ImageTarget name="arthouse_momo" size="0.070000 0.077894" />
